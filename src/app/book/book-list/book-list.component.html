@@ -13,7 +13,7 @@
       <td>{{book.title}}</td>
       <td>{{book.author}}</td>
       <td><a [routerLink]="['/book/edit',book.id]">Edit</a></td>
-      <td><a [routerLink]="">Delete</a></td>
+      <td><a [routerLink]="['/book/delete',book.id]">Delete</a></td>
     </tr>
   </ng-container>
 </table>

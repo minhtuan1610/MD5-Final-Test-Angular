@@ -3,6 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {BookListComponent} from './book-list/book-list.component';
 import {BookCreateComponent} from './book-create/book-create.component';
 import {BookUpdateComponent} from './book-update/book-update.component';
+import {BookDeleteComponent} from './book-delete/book-delete.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'edit/:id',
     component: BookUpdateComponent
+  },
+  {
+    path: 'delete/:id',
+    component: BookDeleteComponent
   }
 ];
 
