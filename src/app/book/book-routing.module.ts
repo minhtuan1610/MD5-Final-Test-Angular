@@ -4,6 +4,7 @@ import {BookListComponent} from './book-list/book-list.component';
 import {BookCreateComponent} from './book-create/book-create.component';
 import {BookUpdateComponent} from './book-update/book-update.component';
 import {BookDeleteComponent} from './book-delete/book-delete.component';
+import {BookViewComponent} from './book-view/book-view.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'delete/:id',
     component: BookDeleteComponent
+  },
+  {
+    path: 'view/:id',
+    component: BookViewComponent
   }
 ];
 

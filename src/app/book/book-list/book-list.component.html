@@ -1,5 +1,6 @@
 <h1>List of books</h1>
 <a routerLink="/book/create">Create new book</a>
+<p>The total of books: {{booklength}} book(s)</p>
 <table>
   <tr>
     <th>#</th>
@@ -10,7 +11,7 @@
   <ng-container *ngFor="let book of books; index as i">
     <tr>
       <td>{{i + 1}}</td>
-      <td>{{book.title}}</td>
+      <td><a [routerLink]="['/book/view',book.id]">{{book.title}}</a></td>
       <td>{{book.author}}</td>
       <td><a [routerLink]="['/book/edit',book.id]">Edit</a></td>
       <td><a [routerLink]="['/book/delete',book.id]">Delete</a></td>
