@@ -1,5 +1,5 @@
-<h1>Create a new book</h1>
-<form (ngSubmit)="submit()" [formGroup]="bookForm">
+<h1>Update book</h1>
+<form (ngSubmit)="updateBook(id)" [formGroup]="bookForm">
   <table>
     <tr>
       <th>Name:</th>
@@ -14,9 +14,9 @@
       <td><input formControlName="description" type="text"></td>
     </tr>
     <tr>
-      <th></th>
+      <th>&nbsp;</th>
       <td>
-        <button>Create</button>
+        <button>Update</button>
       </td>
     </tr>
   </table>
