@@ -1,0 +1,23 @@
+<h1>Create a new book</h1>
+<form (ngSubmit)="submit()" [formGroup]="bookForm">
+  <table>
+    <tr>
+      <th>Name:</th>
+      <td><input formControlName="name" type="text"></td>
+    </tr>
+    <tr>
+      <th>Author:</th>
+      <td><input formControlName="author" type="text"></td>
+    </tr>
+    <tr>
+      <th>Description:</th>
+      <td><input formControlName="description" type="text"></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>
+        <button>Create</button>
+      </td>
+    </tr>
+  </table>
+</form>
